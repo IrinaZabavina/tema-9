@@ -1,0 +1,8 @@
+def palindrom(stroka):
+    reverse = ''
+    for i in range(len(stroka), 0, -1): #от максимального значения до 0
+        reverse += stroka[i-1]
+    if stroka == reverse:
+        print("True")
+    else:
+        print("False")
